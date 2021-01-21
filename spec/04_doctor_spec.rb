@@ -39,7 +39,7 @@ describe 'Doctor' do
     end
   end
 
-  describe '#patient' do
+  describe '#patients' do
     it 'has many patients, through appointments' do
       doctor_who = Doctor.new('The Doctor')
       hevydevy = Patient.new('Devin Townsend')
