@@ -18,5 +18,5 @@ class Doctor
   end
   def patients
   self.appointments.map { |appoint| appoint.patient }.uniq
-end
+  end
 end
