@@ -17,6 +17,6 @@ class Doctor
     Appointment.all.select { |appointment| appointment.doctor == self }
   end
   def patients
-  self.appointments.map { |appoint| appoint.patient }.uniq
+    self.appointments.map { |appoint| appoint.patient }.uniq
   end
 end
